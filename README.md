@@ -18,6 +18,16 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Migrations and seeds live in `supabase/`. See [`supabase/README.md`](supabase/README.md).
 
+## Tests
+
+```bash
+npm run test              # unit (Vitest)
+npm run test:e2e          # browser (Playwright; installs dev server)
+npx playwright install    # first time only
+```
+
+See [`tests/TEST_CASES.md`](tests/TEST_CASES.md) for screen ↔ test mapping.
+
 ## Deploy
 
 [Vercel](https://vercel.com/new) — set the same env vars as `.env.example`.

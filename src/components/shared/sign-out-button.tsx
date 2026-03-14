@@ -17,7 +17,7 @@ export function SignOutButton(): JSX.Element {
 
     startTransition(async () => {
       await supabase.auth.signOut();
-      router.replace("/login");
+      router.replace("/");
       router.refresh();
       setIsPending(false);
     });
